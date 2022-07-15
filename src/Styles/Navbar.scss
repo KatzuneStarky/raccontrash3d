@@ -1,0 +1,13 @@
+@import '../index.scss';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-light-color;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

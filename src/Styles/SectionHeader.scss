@@ -1,0 +1,9 @@
+@import '../index.scss'; 
+
+.section-header{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: $text-light-color;
+}

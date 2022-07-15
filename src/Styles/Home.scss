@@ -1,0 +1,46 @@
+@import '../index.scss';
+
+body{
+    background-color: $background-color;
+}
+
+.main-container{
+    padding: 0px 5vw;
+}
+
+section{
+    padding: 100px 0;
+    .section-header{
+        margin-bottom: 50px;
+    }
+}
+
+.loader-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #191919;
+    color: white;
+    h1{
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-top: 10px;
+    }
+}
+
+.absolute{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
