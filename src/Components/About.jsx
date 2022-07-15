@@ -4,7 +4,7 @@ import '../Styles/About.scss'
 
 const About = () => {
     return (
-        <section className="about-section" data-scroll-container>
+        <section className="about-section">
             <SectionHeader title={"Acerca de"} />
             <p className="headline">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolorem

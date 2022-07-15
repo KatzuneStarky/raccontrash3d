@@ -6,15 +6,14 @@ import About from '../Components/About'
 import Gallery from '../Components/Gallery'
 import Footer from '../Components/Footer'
 import '../Styles/Home.scss'
-import useLocationScroll from '../Hooks/useLocationScroll'
+import BottomMenu from '../Components/BottomMenu'
 
 const Home = () => {
     const [preloader, setPreloader] = useState(true)
-    useLocationScroll(!preloader)
     const [timer, setTimer] = useState(5)
     const id = useRef(null)
 
-    const clear = () =>{
+    const clear = () => {
         window.clearInterval(id.current)
         setPreloader(false)
     }
@@ -26,7 +25,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        if(timer === 1){
+        if (timer === 1) {
             clear()
         }
     }, [timer])
@@ -41,14 +40,16 @@ const Home = () => {
                     </div>
                 ) :
                     (
-                        <div className='main-container' id='main-container' data-scroll-container>
-                            <Navbar />
-                            <Header />
-                            <Featured />
-                            <About />
-                            <Gallery />
-                            <Footer />
-                        </div>
+                        <>
+                            <div className='main-container' id='main-container'>
+                                <Header />
+                                <Featured />
+                                <About />
+                                <Gallery />
+                                <Footer />
+                            </div>
+                            <BottomMenu />
+                        </>
                     )
             }
         </>

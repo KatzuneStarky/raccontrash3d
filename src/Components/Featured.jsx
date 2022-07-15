@@ -4,7 +4,7 @@ import '../Styles/Featured.scss'
 const Featured = () => { 
 
     return (
-        <section className="featured-section" data-scroll-container>
+        <section className="featured-section">
             <div className="featured-row-layout">
                 <h6>3d Modeling</h6>
                 <img src={"https://cdn1.epicgames.com/epic/offer/Flower_Epic_PDPpromo_portrait-1288x1450-c0fb6d93a8d729d60dcee1af234e4888.jpg"} alt="" />

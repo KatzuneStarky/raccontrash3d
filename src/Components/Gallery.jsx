@@ -11,7 +11,7 @@ function GalleryItem({
     index,
 }) {
     return (
-        <div className="gallery-item-wrapper" data-scroll-container>
+        <div className="gallery-item-wrapper">
             <div />
             <div className="gallery-item">
                 <div className="gallery-item-info">

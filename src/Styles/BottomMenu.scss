@@ -1,0 +1,84 @@
+@import '../index.scss'; 
+
+.navigation{
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    width: 350px;
+    height: 70px;
+    background-color: $footer-color;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    ul{
+        position: relative;
+        display: flex;
+        li{
+            position: relative;
+            height: 70px;
+            width: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $text-light-color;
+            cursor: pointer;
+            z-index: 1;
+            .icon{
+                position: relative;
+                display: block;
+                line-height: 80px;
+                font-size: 20px;
+                transition: 0.5s;
+                a{
+                    color: $text-light-color;
+                }
+            }
+            .name{
+                position: absolute;
+                transform: translateY(50px);
+                transition: 0.5s;
+                opacity: 0;
+            }
+            &.active .icon{
+                transform: translateY(-35px);
+                transition: 0.5s;
+            }
+            &.active .name{
+                opacity: 1;
+                transform: translateY(40px);
+                transition: 0.5s;
+            }
+
+            &:nth-child(1).active ~ .menu-bg{
+                transform: translateX(calc(70px * 0));
+            }
+
+            &:nth-child(2).active ~ .menu-bg{
+                transform: translateX(calc(70px * 1));
+            }
+
+            &:nth-child(3).active ~ .menu-bg{
+                transform: translateX(calc(70px * 2));
+            }
+
+            &:nth-child(4).active ~ .menu-bg{
+                transform: translateX(calc(70px * 3));
+            }
+
+            transition: 0.5s;
+        }
+        .menu-bg{
+            position: absolute;
+            top: -40px;
+            left: 35px;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background: $second-color;
+            border: 6px solid $footer-color;
+            transition: 0.3s;
+        }
+    }
+}

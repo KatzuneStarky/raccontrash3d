@@ -1,0 +1,30 @@
+@import '../index.scss'; 
+
+header{
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: $footer-color;
+    z-index: 999;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin-top: 15px;
+        text-transform: uppercase;
+        .logo{
+            margin-left: 100px;
+            color: $text-light-color;
+            font-size: 30px;
+        }
+        .hamburguer{
+            margin-right: 100px;
+            cursor: pointer;
+            color: $text-light-color;
+            font-size: 30px;
+        }
+    }
+}
